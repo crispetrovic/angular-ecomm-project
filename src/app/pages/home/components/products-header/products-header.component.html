@@ -2,10 +2,11 @@
     <div class="flex justify-between">
         <div>
             <button mat-button [matMenuTriggerFor]="sortByMenu">
-                Sort by description
+                Sort by {{sort}}
             </button>
             <mat-menu #sortByMenu="matMenu">
-
+                <button (click)="onSortUpdated('descending')" mat-menu-item>descending</button>
+                <button (click)="onSortUpdated('ascending')" mat-menu-item>ascending</button>
             </mat-menu>
         </div>
     </div>
