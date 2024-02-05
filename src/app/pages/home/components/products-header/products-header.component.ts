@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
 })
 export class ProductsHeaderComponent {
   sort = 'descending';
+  itemsShowCount = 12;
 
   constructor() { }
 
@@ -14,5 +15,9 @@ export class ProductsHeaderComponent {
 
   onSortUpdated(newSort: string): void {
     this.sort = newSort;
+  }
+
+  onItemsUpdated(count: number): void {
+    this.itemsShowCount = count;
   }
 }
