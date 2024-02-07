@@ -6,4 +6,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductBoxComponent implements OnInit{
 
+  constructor() {}
+
+  ngOnInit(): void {
+
+  }
 }
